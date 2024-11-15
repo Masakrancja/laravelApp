@@ -28,6 +28,7 @@ class GamesSeeder extends Seeder
           $row['description'] = $faker->sentence($faker->numberBetween(10, 20));
           $row['publisher'] = $faker->randomElement(['EA games', 'CBS', 'Atari', 'Nontendo', 'CD Project']);
           $row['genre_id'] = $faker->numberBetween(1, 5);
+          $row['score'] = $faker->numberBetween(1, 100);
           $row['created_at'] = Carbon::now();
           $row['updated_at'] = Carbon::now();
           $rows[] = $row;
