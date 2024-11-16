@@ -22,4 +22,5 @@ class TestController extends Controller
       
       return view('test');
     }
+
 }
